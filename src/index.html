@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html>
+  
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+ <div id="root">
+  <header>
+    <section>
+      <h1>CIPHER</h1>
+      <h1>Cifre o descifre mensajes al amor de su vida.</h1>
+    </section>
+  </header>
+
+  <main>
+      <label for="mensaje"><h2>Cifre un mensaje para enviar en secreto.</label></h2>
+      <p><textarea name="text" id="mensaje" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></p>
+
+      <label for="desplazamiento"><h3>Defina la cantidad de desplazamiento:</h3></label>
+      <p><input type="number" id="desplazamiento" size="4" placeholder="Numero a desplazar"/></p>
+
+      <p><button type="button" id="cifrar">Cifrar</button></p>
+
+      <label for="mensaje2"><h3>Mensaje cifrado:</h3></label>
+      <p><textarea name="text" id="mensaje2" rows="10" cols="40" ></textarea></p>
+      <br>
+      <br>
+      <label for="mensajes"><h2>Descifre su mensaje.</h2></label>
+      <p><textarea name="text" id="mensajes" rows="10" cols="50" placeholder="Ingrese su mensaje cifrado"></textarea></p>
+
+      <label for="desplazamiento2"><h3>Defina la cantidad de desplazamiento:</h3></label>
+      <p><input type="number" id="desplazamiento2" size="4" placeholder="Numero a desplazar"/></p>
+
+      <p><button type="button" id="descifrar">Descifrar</button></p>
+
+      <label for="mensaje3"><h3>Mensaje descifrado:</h3></label>
+      <p><textarea name="text" id="mensaje3" rows="10" cols="50" ></textarea></p>
+
+     <footer>
+      <p><input type="button" id="volver" value="Volver" onclick="location.reload()"/></p>
+    </footer> 
+
+  </main>
     </div>
     <script src="index.js" type="module"></script>
   </body>
-</html>
+
+  </html>

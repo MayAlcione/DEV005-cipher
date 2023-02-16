@@ -1,0 +1,69 @@
+
+
+body{
+    margin-top: 0.5cm;
+    margin-bottom: 0.5cm;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+textarea {
+    height: 6em;
+    width: 400px;
+    align-items: center;
+}
+
+button {
+    padding: 30px, 60px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: palevioletred;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+    color: rgb(145, 66, 66);
+}
+
+
+h2, h3, p {
+    font-family: Arial, Helvetica, sans-serif ;
+    text-align: center;
+    color: black;
+    box-sizing: content-box;
+}
+
+input {
+    font-family: "Digital", Arial, Helvetica, sans-serif;
+    font-size: 1.5cap;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: #f1f1f1;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+h5 {
+    font-family: "Digital", Arial, Helvetica, sans-serif;
+    box-sizing: content-box;
+    background-color: white (236, 211, 215);
+    padding: 5px;
+    text-align: center;
+}
+
+main {
+    padding: 25px;
+    box-shadow: none;
+    border-radius: var(--border-redondo);
+}
+
+
+
+div.centro {
+    text-align: center;
+}
