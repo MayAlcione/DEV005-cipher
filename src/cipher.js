@@ -1,4 +1,4 @@
-const cipher = {
+
 
 export function cifrar (texto, desplazamiento){
   if (!texto)
@@ -17,10 +17,14 @@ export function cifrar (texto, desplazamiento){
   return"";
   const letras = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
 
+  
+  let temp = (desplazamiento % 26 - 26) % 26;
+  if (temp == 0)
+    temp = 1;
+
   desplazamiento = (desplazamiento % 26 - 26) % 26;
 
   return texto.replace(/[A-Z]/ig, c=> letras[(letras.indexOf(c)-desplazamiento)%26]);
 }
-}
 
-export default cipher;
+

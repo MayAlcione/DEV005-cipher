@@ -13,10 +13,11 @@ function inicio(){
         document.getElementById("mensaje2").value = cifrar(texto, desplazamiento);
     }, true);
 
-    // Codigo de Decifrar
+    // codigo decifrar
     document.getElementById("mensajes").addEventListener("keyup", function(){
         this.value = this.value.toUpperCase();
     }, true);
+
 
     document.getElementById("descifrar").addEventListener("click", function(){
         let texto = document.getElementById("mensajes").value.toUpperCase();
@@ -24,4 +25,3 @@ function inicio(){
         document.getElementById("mensaje3").value = descifrar(texto, desplazamiento);
     }, true);
 }
-
