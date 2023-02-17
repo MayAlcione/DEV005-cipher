@@ -67,3 +67,7 @@ main {
 div.centro {
     text-align: center;
 }
+
+#cifrado {
+    background-color: aqua;
+}
