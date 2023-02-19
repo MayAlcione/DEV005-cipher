@@ -1,20 +1,50 @@
-
-
-body{
-    margin-top: 0.5cm;
-    margin-bottom: 0.5cm;
-    display: flex;
+body {
+    background-color: pink;
+    background-size: cover;
+    background-position: top;
     justify-content: center;
     align-items: center;
-    background-color: pink;
 }
-
+main {
+    font-family: Arial, Helvetica, sans-serif ;
+    padding: 25px;
+    box-shadow: none;
+    border-radius: var(--border-redondo);
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(145, 66, 66);
+}
+h2 {
+        font-family: Arial, Helvetica, sans-serif ;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(145, 66, 66);
+}
+h3, p {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(90, 36, 36);
+    box-sizing: content-box;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(90, 36, 36);
+}
+div {
+    text-align: center;
+}
 textarea {
     height: 6em;
     width: 400px;
     align-items: center;
+    resize: none;
 }
-
 button {
     padding: 30px, 60px;
     font-size: 20px;
@@ -22,49 +52,20 @@ button {
     color: palevioletred;
     text-align: center;
 }
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif ;
-    text-align: center;
-    color: rgb(145, 66, 66);
-}
-
-
-h2, h3, p {
-    font-family: Arial, Helvetica, sans-serif ;
-    text-align: center;
-    color: black;
-    box-sizing: content-box;
-}
-
 input {
-    font-family: "Digital", Arial, Helvetica, sans-serif;
-    font-size: 1.5cap;
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-    border: #f1f1f1;
-    box-sizing: content-box;
+    padding: 30px, 60px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+    color: palevioletred;
     text-align: center;
 }
-
-h5 {
-    font-family: "Digital", Arial, Helvetica, sans-serif;
-    box-sizing: content-box;
-    background-color: white (236, 211, 215);
-    padding: 5px;
-    text-align: center;
+section {
+        background-color: rgb(217, 138, 138) ;
+        margin-left: 8cm;
+        margin-right: 8cm;
+        margin-top: 0cm;
+        
 }
-
-main {
-    padding: 25px;
-    box-shadow: none;
-    border-radius: var(--border-redondo);
-}
-
-
-
 div.centro {
     text-align: center;
 }
-
