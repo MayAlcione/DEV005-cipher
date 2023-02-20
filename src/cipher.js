@@ -1,8 +1,18 @@
-export function cifrar (mensaje, desplazamiento){
-  let mensajeCifrado = "";
+const cipher = {
+  encode,
+  decode
+}
 
-  //convertir a entero desplazamiento
-  desplazamiento = parseInt(desplazamiento);
+
+
+function encode (desplazamiento, mensaje){
+  if(typeof(mensaje)!== 'string')  throw new TypeError('Parameter is neeed string')
+  //if(typeof(desplazamiento)!== 'number') throw new TypeError('Parameter is neeed number')
+  
+  //para tomar desplazamiento como numero
+  desplazamiento = parseInt(desplazamiento)
+
+  let mensajeCifrado = "";
   
   //como van correr las letras del mensaje
   let aAscii;
@@ -10,13 +20,12 @@ export function cifrar (mensaje, desplazamiento){
     //sacar codigo Ascii  
     aAscii = mensaje.charCodeAt(i);
     let newAscii = ((aAscii - 65 + desplazamiento) % 26) + 65;
-    //para que Ascii solo llegue hasta 32, devolve lo mismo caracter
-    if (aAscii === 32,33,34,35,36,37,38,39,40,41,42,43,45,46,47) {newAscii = 32,33,34,35,36,37,38,39,40,41,42,43,45,46,47; }
-
+    //para que Ascii no cambie espacio, ! y @
+    if (aAscii === 32) {newAscii = 32; }
     if (aAscii === 33) {newAscii = 33; }
-    
-    
-    let desdeAscii = String.fromCharCode(newAscii)
+    if (aAscii === 64) {newAscii = 64; }
+
+    const desdeAscii = String.fromCharCode(newAscii)
     mensajeCifrado += desdeAscii
   }
 
@@ -24,27 +33,30 @@ export function cifrar (mensaje, desplazamiento){
 }
 
 
-export function descifrar (mensaje, desplazamiento){
-  let mensajeDescifrado = "";
-
-  //convertir a entero desplazamiento
-  desplazamiento = parseInt(desplazamiento);
+function decode (desplazamiento2, mensajes){
+  if(typeof(mensajes)!== 'string')  throw new TypeError('Parameter is neeed string')
   
-  //como van correr las letras del mensaje
-  let aAscii;
-  for(let i = 0; i < mensaje.length; i++){
-    //sacar codigo Ascii  
-    aAscii = mensaje.charCodeAt(i);
-    let newAscii = ((aAscii + 65 - desplazamiento) % 26) + 65;
-    //para que Ascii solo llegue hasta 32, que es un espacio para evitar otros caracteres
-    if (aAscii === 32) {newAscii = 32; }
+  desplazamiento2 = parseInt(desplazamiento2)
 
+  let mensajeDescifrado = "";
+  
+  
+  let aAscii;
+  for(let i = 0; i < mensajes.length; i++){
+    
+    aAscii = mensajes.charCodeAt(i);
+    let newAscii = ((aAscii + 65 - desplazamiento2) % 26) + 65;
+    
+    if (aAscii === 32) {newAscii = 32; }
     if (aAscii === 33) {newAscii = 33; }
+    if (aAscii === 64) {newAscii = 64; }
     
     
-    let desdeAscii = String.fromCharCode(newAscii)
+    const desdeAscii = String.fromCharCode(newAscii)
     mensajeDescifrado += desdeAscii
   }
 
   return mensajeDescifrado
 }
+
+export default cipher;
