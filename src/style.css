@@ -18,10 +18,10 @@ h1 {
     color: rgb(145, 66, 66);
 }
 h2 {
-        font-family: Arial, Helvetica, sans-serif ;
-        font-size: 30px;
-        text-align: center;
-        color: rgb(145, 66, 66);
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(145, 66, 66);
 }
 h3, p {
     font-family: Arial, Helvetica, sans-serif ;
@@ -60,12 +60,8 @@ input {
     text-align: center;
 }
 section {
-        background-color: rgb(235, 173, 183) ;
-        margin-left: 8cm;
-        margin-right: 8cm;
-        margin-top: 0cm;
-        
+    background-color: rgb(235, 173, 183) ;
+    margin-left: 8cm;
+    margin-right: 8cm;
 }
-div.centro {
-    text-align: center;
-}
+

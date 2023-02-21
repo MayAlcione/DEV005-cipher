@@ -2,6 +2,7 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CipherLovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,31 +19,35 @@
        <label for="mensaje"><h3>Cifre su mensaje:</h3></label>
         <p><textarea name="text" id="mensaje" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></p>
                     
-       <label for="desplazamiento"><h4>Cantidad de desplazamiento:</h4></label>
-        <p><input type="number" class="positive" min="1" max="30" id="desplazamiento" placeholder="Numero"/></p>
-
-        <p><button type="button" id="cifrar">Cifrar</button></p>
+       <label><h4>Cantidad de desplazamiento:</h4>
+        <input type="number" class="positive" min="1" max="30" id="desplazamiento" placeholder="Numero"/></label>
+       
+        <button type="button" id="cifrar">Cifrar</button>
 
        <label for="mensaje2"><h3>Mensaje cifrado:</h3></label>
         <p><textarea name="text" id="mensaje2" rows="10" cols="40" ></textarea></p>
-      </section>
         
+        <input type="button" id="volver" value="Borrar" onclick="location.reload()"/>
+      
+      </section>
+      
       <section>
        <label for="mensajes"><h3>Descifre su mensaje:</h3></label>
         <p><textarea name="text" id="mensajes" rows="10" cols="50" placeholder="Ingrese su mensaje"></textarea></p>
 
-       <label for="desplazamiento2"><h4>Cantidad de desplazamiento:</h4></label>
-        <p><input type="number" class="positive" min="1" max="30" id="desplazamiento2" placeholder="Numero"/></p>
+       <label><h4>Cantidad de desplazamiento:</h4>
+        <input type="number" class="positive" min="1" max="30" id="desplazamiento2" placeholder="Numero"/></label>
 
-        <p><button type="button" id="descifrar">Descifrar</button></p>
+        <button type="button" id="descifrar">Descifrar</button>
 
        <label for="mensaje3"><h3>Mensaje descifrado:</h3></label>
         <p><textarea name="text" id="mensaje3" rows="10" cols="50" ></textarea></p>
+     
+        <footer>
+          <input type="button" id="volverFin" value="Borrar" onclick="location.reload()"/>
+        </footer>
       </section>
         
-      <footer>
-          <p><input type="button" id="volver" value="Restaurar" onclick="location.reload()"/></p>
-      </footer>
       </main>
     </div>
     <script src="index.js" type="module"></script>
