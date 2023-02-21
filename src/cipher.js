@@ -20,11 +20,9 @@ function encode (desplazamiento, mensaje){
     //sacar codigo Ascii  
     aAscii = mensaje.charCodeAt(i);
     let newAscii = ((aAscii - 65 + desplazamiento) % 26) + 65;
-    //para que Ascii no cambie espacio, ! y @
-    if (aAscii === 32) {newAscii = 32; }
-    if (aAscii === 33) {newAscii = 33; }
-    if (aAscii === 64) {newAscii = 64; }
-
+    //para que Ascii no cambie espacio los caracteres diferentes a A-Z
+    if (aAscii >= 32 && aAscii <= 64) {newAscii = aAscii; }
+    
     const desdeAscii = String.fromCharCode(newAscii)
     mensajeCifrado += desdeAscii
   }
@@ -47,9 +45,7 @@ function decode (desplazamiento2, mensajes){
     aAscii = mensajes.charCodeAt(i);
     let newAscii = ((aAscii + 65 - desplazamiento2) % 26) + 65;
     
-    if (aAscii === 32) {newAscii = 32; }
-    if (aAscii === 33) {newAscii = 33; }
-    if (aAscii === 64) {newAscii = 64; }
+    if (aAscii >= 32 && aAscii <= 64) {newAscii = aAscii; }
     
     
     const desdeAscii = String.fromCharCode(newAscii)
