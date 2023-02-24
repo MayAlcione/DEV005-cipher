@@ -7,7 +7,7 @@ body {
 }
 main {
     font-family: Arial, Helvetica, sans-serif ;
-    padding: 25px;
+    padding: 25px, 0px, 0px, 0px;
     box-shadow: none;
     border-radius: var(--border-redondo);
 }
@@ -23,14 +23,14 @@ h2 {
     text-align: center;
     color: rgb(145, 66, 66);
 }
-h3, p {
+.mensaje, .mensajes, .mensajes2, .mensaje3 {
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 30px;
     text-align: center;
     color: rgb(90, 36, 36);
     box-sizing: content-box;
 }
-h4 {
+label {
     font-family: Arial, Helvetica, sans-serif ;
     font-size: 20px;
     text-align: center;
@@ -40,20 +40,20 @@ div {
     text-align: center;
 }
 textarea {
-    height: 6em;
+    height: 6px;
     width: 400px;
     align-items: center;
     resize: none;
 }
 button {
-    padding: 30px, 60px;
+    padding: 30px, 60px, 0px, 0px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif ;
     color: palevioletred;
     text-align: center;
 }
 input {
-    padding: 30px, 60px;
+    padding: 30px, 60px, 0px, 0px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif ;
     color: palevioletred;
@@ -61,7 +61,7 @@ input {
 }
 section {
     background-color: rgb(235, 173, 183) ;
-    margin-left: 8cm;
-    margin-right: 8cm;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
