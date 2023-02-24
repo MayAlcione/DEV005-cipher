@@ -2,7 +2,7 @@ import cipher from './cipher.js';
 //para interacion del usuario con el navegador
 window.addEventListener("load", inicio, true);
 
-//funcionalidad de cambiar a mayusculas mientras digita
+//funcion de cambiar a mayusculas mientras se digita
 function inicio(){
   document.getElementById("mensaje").addEventListener("keyup", function(){
     this.value = this.value.toUpperCase();
@@ -13,7 +13,7 @@ function inicio(){
     const texto = document.getElementById("mensaje").value;
     //valor del desplazamiento
     const desplazamiento = document.getElementById("desplazamiento").value;
-        
+    //mensaje cifrada
     document.getElementById("mensaje2").value = cipher.encode(desplazamiento, texto);
   }, true);
 

@@ -2,7 +2,6 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CipherLovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -12,40 +11,37 @@
      <header>
       <h1>CipherLovers</h1>
        <h2>Cifre o descifre mensajes al amor de su vida.</h2>
-       <img src="https://img.pikbest.com/58pic/35/39/99/51658PICb6G45ATir1NJP_PIC2018.gif!c1024wm0" width="600" height="400" alt="Un cadeado en forma de corazon en una cadena y una llave.">
+       <img src="https://img.pikbest.com/58pic/35/39/99/51658PICb6G45ATir1NJP_PIC2018.gif!c1024wm0" width="500" height="300" alt="Un cadeado en forma de corazon en una cadena y una llave.">
      </header>
      <main>
       <section>
-       <label for="mensaje"><h3>Cifre su mensaje:</h3></label>
-        <p><textarea name="text" id="mensaje" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea></p>
+       <label for="mensaje">Cifre su mensaje:</label>
+        <textarea name="text" id="mensaje" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea>
                     
-       <label><h4>Cantidad de desplazamiento:</h4>
-        <input type="number" class="positive" min="1" max="30" id="desplazamiento" placeholder="Numero"/></label>
+       <label>Cantidad de desplazamiento:</label>
+        <input type="number" class="positive" min="1" max="30" id="desplazamiento" placeholder="Numero"/>
        
         <button type="button" id="cifrar">Cifrar</button>
 
        <label for="mensaje2"><h3>Mensaje cifrado:</h3></label>
-        <p><textarea name="text" id="mensaje2" rows="10" cols="40" ></textarea></p>
+        <textarea name="text" id="mensaje2" rows="10" cols="40" ></textarea>
         
         <input type="button" id="volver" value="Borrar" onclick="location.reload()"/>
-      
       </section>
       
       <section>
-       <label for="mensajes"><h3>Descifre su mensaje:</h3></label>
-        <p><textarea name="text" id="mensajes" rows="10" cols="50" placeholder="Ingrese su mensaje"></textarea></p>
+       <label for="mensajes">Descifre su mensaje:</label>
+        <textarea name="text" id="mensajes" rows="10" cols="50" placeholder="Ingrese su mensaje"></textarea>
 
-       <label><h4>Cantidad de desplazamiento:</h4>
-        <input type="number" class="positive" min="1" max="30" id="desplazamiento2" placeholder="Numero"/></label>
+       <label>Cantidad de desplazamiento:</label>
+        <input type="number" class="positive" min="1" max="30" id="desplazamiento2" placeholder="Numero"/>
 
         <button type="button" id="descifrar">Descifrar</button>
 
-       <label for="mensaje3"><h3>Mensaje descifrado:</h3></label>
-        <p><textarea name="text" id="mensaje3" rows="10" cols="50" ></textarea></p>
+       <label for="mensaje3">Mensaje descifrado:</label>
+        <textarea name="text" id="mensaje3" rows="10" cols="50" ></textarea>
      
-        <footer>
-          <input type="button" id="volverFin" value="Borrar" onclick="location.reload()"/>
-        </footer>
+        <input type="button" id="volverFin" value="Borrar" onclick="location.reload()"/>
       </section>
         
       </main>
