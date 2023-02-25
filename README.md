@@ -37,7 +37,7 @@ El usúario ingresa un mensaje en la caja de texto y elige un número de desplaz
 
 * Funcionalidad de index.js (hacer que las letras se tornen mayusculas mientras se digitan, funcionalidad de botones y del desplazamiento).
 
-* Cambiar a cipher.js la estructura lógica que habia puesto en index.js (habia hecho un calculo de letras y sus posiciones, pero cambie al codigo ASCII, evitando así que me retorne un valor indefinido).
+* Cambiar a cipher.js la estructura lógica que habia puesto en index.js (habia hecho un calculo de letras y sus posiciones, pero cambie al codigo ASCII).
 
 * Redefinición del producto para tener solo una página.
 
@@ -45,7 +45,7 @@ El usúario ingresa un mensaje en la caja de texto y elige un número de desplaz
 
 * Los colores más oscuros sirven para separar las funciones de la página.
 
-* El gif en el inicio remete al nombre del producto, CipherLovers, un candado en forma de corazón con una llave .
+* El gif en el inicio hace referencia al nombre del producto, CipherLovers, un candado en forma de corazón con una llave .
 
 * Los botones de borrar se repiten para facilitar el uso, en el caso de que el usúario necesite usar una de las funciones más de una vez.
 

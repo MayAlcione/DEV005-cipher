@@ -15,31 +15,31 @@
      </header>
      <main>
       <section>
-       <label for="mensaje">Cifre su mensaje:</label>
+       <label class="mensaje">Cifre su mensaje:</label>
         <textarea name="text" id="mensaje" rows="10" cols="40" placeholder="Ingrese su mensaje"></textarea>
                     
-       <label>Cantidad de desplazamiento:</label>
+       <label class="cantidad">Cantidad de desplazamiento:</label>
         <input type="number" class="positive" min="1" max="30" id="desplazamiento" placeholder="Numero"/>
        
         <button type="button" id="cifrar">Cifrar</button>
 
-       <label for="mensaje2"><h3>Mensaje cifrado:</h3></label>
+       <label for="mensaje2" class="mensaje2">Mensaje cifrado:</label>
         <textarea name="text" id="mensaje2" rows="10" cols="40" ></textarea>
         
         <input type="button" id="volver" value="Borrar" onclick="location.reload()"/>
       </section>
       
       <section>
-       <label for="mensajes">Descifre su mensaje:</label>
+       <label class="mensajes">Descifre su mensaje:</label>
         <textarea name="text" id="mensajes" rows="10" cols="50" placeholder="Ingrese su mensaje"></textarea>
 
-       <label>Cantidad de desplazamiento:</label>
+       <label class="cantidad">Cantidad de desplazamiento:</label>
         <input type="number" class="positive" min="1" max="30" id="desplazamiento2" placeholder="Numero"/>
 
         <button type="button" id="descifrar">Descifrar</button>
 
-       <label for="mensaje3">Mensaje descifrado:</label>
-        <textarea name="text" id="mensaje3" rows="10" cols="50" ></textarea>
+       <label for="mensaje3" class="mensaje3">Mensaje descifrado:</label>
+        <textarea name="text" id="mensaje3" rows="10" cols="40" ></textarea>
      
         <input type="button" id="volverFin" value="Borrar" onclick="location.reload()"/>
       </section>
